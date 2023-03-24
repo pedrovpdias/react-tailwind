@@ -2,6 +2,25 @@ import React from "react";
 import { CheckIcon } from '@heroicons/react/24/solid';
 
 export default function Princing() {
+    const includedItems = [
+        { 
+            index: 0,
+            item: 'Private forum access'
+        },
+        { 
+            index: 1,
+            item: 'Member resources'
+        },
+        { 
+            index: 2,
+            item: 'Entry to annual conference'
+        },
+        { 
+            index: 3,
+            item: 'Official member t-shirt'
+        },
+    ];
+
     return (
         <div className="
                 grid gap-20 py-28 px-8 place-content-center
@@ -52,25 +71,17 @@ export default function Princing() {
                                 text-sm text-gray-600
                             "
                         >
-                            <li className="flex gap-3 items-center justify-start">
-                                <CheckIcon className="text-indigo-600" />
-                                Private forum access
-                            </li>
-
-                            <li className="flex gap-3 items-center justify-start">
-                                <CheckIcon className="text-indigo-600" />
-                                Member resources
-                            </li>
-
-                            <li className="flex gap-3 items-center justify-start">
-                                <CheckIcon className="text-indigo-600" />
-                                Entry to annual conference
-                            </li>
-
-                            <li className="flex gap-3 items-center justify-start">
-                                <CheckIcon className="text-indigo-600"/>
-                                Official member t-shirt
-                            </li>
+                            {
+                                includedItems.map(item => (
+                                    <li 
+                                        key={item.index}
+                                        className="flex gap-3 items-start justify-start"
+                                    >
+                                        <CheckIcon className="text-indigo-600" />
+                                        {item.item}
+                                    </li>
+                                ))
+                            }
                         </ul>
                     </div>
                 </div>

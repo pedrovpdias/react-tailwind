@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 //Components
 import Princing from './components/Pricing';
+import Teams from './components/Teams';
 
 //Pages
 import App from './App';
@@ -21,6 +22,10 @@ export default function Routes() {
         {
             path: '/pricing',
             element: <Princing />
+        },
+        {
+            path: '/teams',
+            element: <Teams />
         }
     ]);
 
