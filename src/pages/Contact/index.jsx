@@ -6,23 +6,21 @@ import {
 } from '@heroicons/react/24/outline';
 
 export default function Contact() {
-    return (
+    return (   
         <div className='
                 container 
                 xl 
-                grid grid-cols-2 place-content-center gap-20
+                grid grid-cols-2 place-content-center
                 border-solid border border-gray-100
-                m-auto
-                mt-16
                 rounded-lg
                 antialiased
                 font-sans
+                divide-x divide-gray-100 divide-solid
         '>
             <div className='
                 grid gap-10
                 px-10 py-20
                 bg-gradient-to-bl from-white to-gray-100
-                border-r border-gray-100
             '>
                 <h1 className='
                     text-2xl
@@ -77,7 +75,8 @@ export default function Contact() {
                     </label>
                     <input
                         className='
-                        border-2 border-gray-200 border-solid rounded-md 
+                        border border-gray-200 border-solid rounded-md 
+                        outline-indigo-600
                         px-3 py-1
                         h-10
                         w-full
@@ -95,7 +94,8 @@ export default function Contact() {
                     </label>
                     <input
                         className='
-                        border-2 border-gray-200 border-solid rounded-md 
+                        border border-gray-200 border-solid rounded-md 
+                        outline-indigo-600
                         px-3 py-1
                         h-10
                         w-full
@@ -113,7 +113,8 @@ export default function Contact() {
                     </label>
                     <input
                         className='
-                        border-2 border-gray-200 border-solid rounded-md
+                        border border-gray-200 border-solid rounded-md
+                        outline-indigo-600
                         px-3 py-1
                         h-10
                         w-full
@@ -131,7 +132,8 @@ export default function Contact() {
                     </label>
                     <input
                         className='
-                        border-2 border-gray-200 border-solid rounded-md 
+                        border border-gray-200 border-solid rounded-md 
+                        outline-indigo-600
                         px-3 py-1
                         h-10
                         w-full
@@ -149,7 +151,8 @@ export default function Contact() {
                     </label>
                     <textarea
                         className='
-                        border-2 border-gray-200 border-solid rounded-md 
+                        border border-gray-200 border-solid rounded-md 
+                        outline-indigo-600
                         px-3 py-1
                         h-20
                         w-full
@@ -160,6 +163,7 @@ export default function Contact() {
 
                 <button
                     className='bg-indigo-600 p-3 rounded-md
+                        outline-indigo-600
                         font-bold text-white text-sm mr-0 ml-auto
                     '
                 >

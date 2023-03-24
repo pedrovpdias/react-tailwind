@@ -5,8 +5,14 @@ function App() {
   return (
     <ul className="">
       <li>
-        <Link to='Contact' >
+        <Link to='/contact' >
           Contact Template
+        </Link>
+      </li>
+
+      <li>
+        <Link to='/pricing' >
+          Pricing Sections
         </Link>
       </li>
     </ul>
